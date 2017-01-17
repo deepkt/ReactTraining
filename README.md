@@ -14,6 +14,9 @@ npm install
 ```js
 grunt
 ```
+Once grunt build is successfull, navigate to following URL:
+
+http://localhost:1337
 
 ## Building for production
 ```js
