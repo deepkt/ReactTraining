@@ -26,7 +26,8 @@ var Home = React.createClass({
 
   render() {
     return(
-      <div className='app-title'>
+      <div className='home-container'>
+        <h1 className='app-title'>React JS with Grunt - Training</h1>
         <input type='text' value={this.state.user} onChange={this.handleNameChange}/>
         <Greeting username={this.state.user}/>
         {this.sayHello()}
