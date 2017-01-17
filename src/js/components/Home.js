@@ -15,7 +15,7 @@ var Home = React.createClass({
     // console.log(userData.getUsers());
     this.setState({user: event.target.value});
   },
-  
+
   sayHello (){
     return(
       <div className='app-title'>
@@ -27,6 +27,7 @@ var Home = React.createClass({
   render() {
     return(
       <div className='app-title'>
+        <h1>Hello</h1>
         <input type='text' value={this.state.user} onChange={this.handleNameChange}/>
         <Greeting username={this.state.user}/>
       </div>
