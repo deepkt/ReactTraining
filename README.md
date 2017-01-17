@@ -1,5 +1,4 @@
-# grunt-react-boilerplate [![Build Status](https://travis-ci.org/padsbanger/grunt-react-boilerplate.svg?branch=master)](https://travis-ci.org/padsbanger/grunt-react-boilerplate)
-
+# grunt-react-boilerplate [![Build Status](https://travis-ci.org/deepkt/ReactTraining.svg?branch=master)](https://travis-ci.org/deepkt/ReactTraining)
 My boilerplate for starting React.js ES2015 based applications.
 
 It uses Babel & Browserify to handle modules and compile them into plain clean Javascript, LESS for CSS.
