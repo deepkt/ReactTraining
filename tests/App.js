@@ -1,7 +1,7 @@
 import React from 'react';
 import { expect } from 'chai';
 import { shallow, mount, render } from 'enzyme';
-import App from '../src/js/components/App';
+import App from '../src/js/components/Home';
 
 describe("A suite", function() {
   it("contains spec with an expectation", function() {
