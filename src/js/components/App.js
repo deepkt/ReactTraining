@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { Link } from 'react-router'
+import { PageHeader} from 'react-bootstrap'
 
 var App = React.createClass({
 
@@ -8,7 +9,7 @@ var App = React.createClass({
     return(
       <div className='app-container'>
         <div className='app-bar'>
-          <h1 className='app-title'>React JS with Grunt - Training</h1>
+          <PageHeader>React JS with Grunt <small>Training</small></PageHeader>
             <ul role="nav">
               <li><Link to="/about" activeStyle={{ color: 'red' }}>About</Link></li>
               <li><Link to="/users" activeStyle={{ color: 'red' }}>Users</Link></li>

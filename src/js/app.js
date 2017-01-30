@@ -9,9 +9,6 @@ import User      from './components/User.js'
 import Users     from './components/Users.js'
 import PageNotFound  from './components/NotFound.js'
 
-// ReactDOM.render( <Home /> ,
-//   document.getElementById('app')
-// )
 
 ReactDOM.render((
   <Router history={hashHistory}>

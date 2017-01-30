@@ -40,6 +40,15 @@ module.exports = function(grunt) {
       }
     },
 
+    copy: {
+      vendorlibs: {
+        expand: true,
+        cwd: 'src/',
+        src: 'vendorlibs/**',
+        dest: 'dist/'
+      }
+    },
+
     connect: {
       server: {
         options: {
@@ -98,6 +107,6 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.registerTask('default', ['less', 'browserify', 'configureProxies:server', 'connect', 'watch']);
-  grunt.registerTask('build', ['less', 'browserify', 'uglify']);
+  grunt.registerTask('default', ['less', 'browserify', 'copy', 'configureProxies:server', 'connect', 'watch']);
+  grunt.registerTask('build', ['less', 'browserify', 'uglify', 'copy']);
 };
