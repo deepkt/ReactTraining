@@ -16,7 +16,6 @@ var App = React.createClass({
             </ul>
         </div>
         {this.props.children}
-        <div>Copyright</div>
       </div>
     )
   }

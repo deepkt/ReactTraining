@@ -9,10 +9,10 @@ var UserItem = React.createClass({
 
   render() {
     return(
-        <li className='user-item' onClick={this.selectUser}>
+        <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12 user-item" onClick={this.selectUser}>
           <div>{this.props.user.name}</div>
           <div>{this.props.user.email}</div>
-        </li>
+        </div>
     )
   }
 });
