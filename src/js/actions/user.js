@@ -4,3 +4,9 @@ export function selectUser(user) {
     user:user
   }
 }
+export function addToFriends(friend) {
+  return {
+    type: 'ADD_TO_FRIENDS',
+    friend:friend
+  }
+}

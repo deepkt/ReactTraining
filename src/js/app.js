@@ -9,7 +9,8 @@ import promise from 'redux-promise';
 import createLogger from 'redux-logger';
 import allReducers from './reducers';
 
-import App      from './components/App.js'
+// import App      from './components/App.js'
+import Header    from './containers/header'
 import Home      from './components/Home.js'
 import About     from './components/About.js'
 import User      from './components/User.js'
@@ -25,7 +26,7 @@ var store = createStore(
 ReactDOM.render((
   <Provider store={store}>
     <Router history={hashHistory}>
-      <Route path="/" component={App}>
+      <Route path="/" component={Header}>
         <Route path="/" component={Home}/>
         <Route path="/about" component={About}/>
         <Route path="/users" component={Users}>
